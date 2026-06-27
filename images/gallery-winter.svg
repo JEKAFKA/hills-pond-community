@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" role="img" aria-label="The frozen pond in winter, ringed by snowy evergreens">
+  <defs>
+    <linearGradient id="gw-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c7d8e6"/><stop offset="100%" stop-color="#eef4f8"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="150" fill="url(#gw-sky)"/>
+  <!-- snowy hills -->
+  <path d="M0 120 Q 110 88 220 116 T 400 110 V 150 H 0 Z" fill="#dfeaf1"/>
+  <!-- evergreens -->
+  <g>
+    <polygon points="70,118 52,118 70,76 88,118" fill="#3f6a44"/>
+    <polygon points="70,100 56,100 70,72 84,100" fill="#4f7d52"/>
+    <polygon points="300,118 280,118 300,70 320,118" fill="#3f6a44"/>
+    <polygon points="300,98 286,98 300,66 314,98" fill="#4f7d52"/>
+    <polygon points="150,120 134,120 150,84 166,120" fill="#456f49"/>
+  </g>
+  <!-- snow caps -->
+  <g fill="#fff" opacity="0.85">
+    <polygon points="70,76 62,90 78,90"/>
+    <polygon points="300,70 292,84 308,84"/>
+  </g>
+  <!-- frozen surface -->
+  <rect y="150" width="400" height="110" fill="#e8f1f6"/>
+  <rect y="150" width="400" height="110" fill="#bcd6e4" opacity="0.5"/>
+  <!-- ice cracks -->
+  <g stroke="#9cbdd0" stroke-width="1.5" fill="none" opacity="0.8">
+    <path d="M60 175 L 140 200 L 110 235"/>
+    <path d="M140 200 L 240 185 L 320 220"/>
+    <path d="M240 185 L 250 240"/>
+  </g>
+  <!-- falling snow -->
+  <g fill="#ffffff">
+    <circle cx="100" cy="50" r="3"/><circle cx="180" cy="30" r="2.5"/><circle cx="260" cy="60" r="3"/>
+    <circle cx="330" cy="40" r="2.5"/><circle cx="50" cy="90" r="2.5"/><circle cx="210" cy="100" r="2.5"/>
+  </g>
+</svg>

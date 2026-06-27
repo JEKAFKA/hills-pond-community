@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" role="img" aria-label="Illustration of a fish and reeds beneath the pond surface">
+  <defs>
+    <linearGradient id="c2-water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9fd0e2"/><stop offset="100%" stop-color="#1b4965"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="220" fill="url(#c2-water)"/>
+  <!-- light rays -->
+  <g fill="#ffffff" opacity="0.12">
+    <polygon points="120,0 150,0 90,220 40,220"/>
+    <polygon points="240,0 270,0 220,220 180,220"/>
+  </g>
+  <!-- reeds -->
+  <g stroke="#2f6b46" stroke-width="6" stroke-linecap="round">
+    <path d="M50 220 C 46 170 60 150 52 110"/>
+    <path d="M72 220 C 78 175 64 150 76 118"/>
+    <path d="M330 220 C 326 175 340 150 332 120"/>
+    <path d="M352 220 C 358 180 346 155 356 125"/>
+  </g>
+  <!-- fish -->
+  <g transform="translate(170 110)">
+    <ellipse cx="0" cy="0" rx="58" ry="26" fill="#5b8a3a"/>
+    <ellipse cx="0" cy="0" rx="58" ry="26" fill="#6fa84a" opacity="0.5"/>
+    <polygon points="50,0 84,-22 84,22" fill="#4f7d33"/>
+    <path d="M-10 -26 q 20 -14 40 -2 q -18 4 -40 2 Z" fill="#4f7d33"/>
+    <circle cx="-40" cy="-4" r="6" fill="#fff"/>
+    <circle cx="-41" cy="-4" r="3" fill="#1b3320"/>
+    <path d="M-58 0 q 6 8 0 14" fill="none" stroke="#3f6a2a" stroke-width="3"/>
+  </g>
+  <!-- bubbles -->
+  <g fill="#ffffff" opacity="0.6">
+    <circle cx="120" cy="60" r="5"/>
+    <circle cx="135" cy="40" r="3.5"/>
+    <circle cx="128" cy="24" r="2.5"/>
+  </g>
+</svg>
