@@ -115,6 +115,11 @@ details.faq summary {
   color: #fff;
   text-align: center;
   padding: 3.25rem 1.25rem 3.75rem;
+  min-height: 42vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(180deg, var(--water) 0%, var(--water-light) 100%);
   overflow: hidden;
 }
