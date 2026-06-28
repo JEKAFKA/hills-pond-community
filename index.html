@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hills Pond Community &mdash; Hampton, NY</title>
+  <title>Hills Pond Community | Hampton, NY</title>
   <meta name="description" content="Community hub for residents and friends of Hills Pond in Hampton, New York. Contacts, FAQ, and community group." />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -11,7 +11,7 @@
   <header class="site-header">
     <nav class="nav">
       <a class="brand" href="index.html">
-        <span class="mark">&#127754;</span>
+        <img class="mark" src="images/logo.svg" alt="" />
         <span>Hills Pond Community</span>
       </a>
       <div class="nav-links">
@@ -26,10 +26,8 @@
 
   <section class="hero">
     <h1>Welcome to Hills Pond</h1>
-    <p>A quiet 18-acre lake, tucked in the
-       town of Hampton, Washington County, New York.</p>
-    <a class="location" href="https://www.google.com/maps/search/?api=1&amp;query=43.5144433,-73.2801016"
-       target="_blank" rel="noopener">&#128205; Hampton, NY 12887 &middot; near Whitehall</a>
+    <p>A quiet 18-acre lake, tucked in the town of Hampton,<br />
+       Washington County, New York.</p>
   </section>
 
   <main>
@@ -55,7 +53,7 @@
         referrerpolicy="no-referrer-when-downgrade"
         allowfullscreen></iframe>
       <figcaption>
-        Hills Pond, Hampton, NY &mdash;
+        Hills Pond, Hampton, NY &middot;
         <a href="https://www.google.com/maps/search/?api=1&amp;query=43.5144433,-73.2801016"
            target="_blank" rel="noopener">open in Google Maps</a>
       </figcaption>
@@ -64,30 +62,32 @@
     <h2 class="section-title">Community Resources</h2>
 
     <div class="setup-note">
-      <strong>For the site organizer:</strong> A few links below are placeholders
-      marked <span class="badge">Set up needed</span>. Once the Google Doc of
-      contacts and the Google Group exist, replace the <code>href="#"</code>
-      values in <code>index.html</code> with their real URLs.
+      <strong>For the site organizer:</strong> The Community Group link below is
+      still a placeholder marked <span class="badge">Set up needed</span>. Once the
+      Google Group exists, replace its <code>href="#"</code> value in
+      <code>index.html</code> with the real URL.
     </div>
 
     <div class="cards">
       <div class="card" id="contacts">
         <img class="card-img" src="images/cabin-snow.jpg" alt="A log home above the lake in winter snow" />
         <div class="card-body">
-          <div class="icon">&#128221;</div>
-          <h3>Neighbor Contacts <span class="badge">Set up needed</span></h3>
-          <p>A shared Google Doc with names, addresses, and contact information
+          <h3>Neighbor Contacts</h3>
+          <p>A shared Google Sheet with names, addresses, and contact information
              for households around the lake. Kept private to the community.</p>
-          <a class="btn" href="#" rel="noopener">Open Contacts Doc</a>
+          <p class="secure-note"><strong>Access is restricted.</strong>
+             The sheet is shared only with verified residents, never made
+             public, and access can be revoked at any time.</p>
+          <a class="btn" href="https://docs.google.com/spreadsheets/d/1q8JYfatUaCO-7oeQY9UzLf7ospxUxoKf-vQ00gw66Ko/edit"
+             target="_blank" rel="noopener"><img class="btn-icon" src="images/google-docs.svg" alt="" />Open Contacts Sheet</a>
         </div>
       </div>
 
       <div class="card" id="faq">
         <img class="card-img" src="images/lake-autumn-raft.jpg" alt="Hills Pond in autumn with a swim raft and fall foliage" />
         <div class="card-body">
-          <div class="icon">&#10067;</div>
           <h3>Lake FAQ</h3>
-          <p>Answers about the lake itself &mdash; size, boating rules, fishing,
+          <p>Answers about the lake itself: size, boating rules, fishing,
              wildlife, ice, and how to be a good neighbor on the water.</p>
           <a class="btn" href="faq.html">Read the FAQ</a>
         </div>
@@ -96,11 +96,13 @@
       <div class="card" id="group">
         <img class="card-img" src="images/lake-dock-chairs.jpg" alt="Two Adirondack chairs on a floating dock on the lake" />
         <div class="card-body">
-          <div class="icon">&#128172;</div>
           <h3>Community Group <span class="badge">Set up needed</span></h3>
           <p>A Google Group email list for announcements, questions, and
              neighborly coordination throughout the year.</p>
-          <a class="btn secondary" href="#" rel="noopener">Join the Google Group</a>
+          <p class="secure-note"><strong>Members only.</strong>
+             Every request is reviewed by a moderator; only confirmed neighbors
+             can read or post, and messages stay within the group.</p>
+          <a class="btn" href="#" rel="noopener"><img class="btn-icon" src="images/google-g.svg" alt="" />Join the Google Group</a>
         </div>
       </div>
     </div>
@@ -124,7 +126,7 @@
   </main>
 
   <footer class="site-footer">
-    <p>Hills Pond Community &middot; Hampton, Washington County, New York</p>
+    <p>Hills Pond Community<br />Hampton, Washington County, New York</p>
     <p class="sources">
       Lake &amp; town details compiled from public sources including
       <a href="https://www.lake-link.com/new-york-lakes/washington-county-county/hills-pond/28690/">Lake-Link</a>,

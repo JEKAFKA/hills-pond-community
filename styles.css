@@ -26,7 +26,10 @@ body {
   font-family: "Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
   color: var(--ink);
   background: var(--sand);
+  font-size: 1.05rem;
   line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 a {
@@ -35,6 +38,16 @@ a {
 
 a:hover {
   color: var(--water-deep);
+}
+
+/* Serif headings for warmth and clearer hierarchy (no web-font download) */
+h1, h2, h3,
+.hero h1,
+.section-title,
+.card h3,
+details.faq summary {
+  font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif;
+  line-height: 1.2;
 }
 
 /* ---------- Header / Nav ---------- */
@@ -66,8 +79,16 @@ a:hover {
   letter-spacing: 0.2px;
 }
 
+.brand:hover {
+  color: #fff;
+  opacity: 0.92;
+}
+
 .brand .mark {
-  font-size: 1.4rem;
+  width: 30px;
+  height: 30px;
+  display: block;
+  flex: 0 0 auto;
 }
 
 .nav-links {
@@ -134,30 +155,17 @@ a:hover {
   color: #eef6fb;
 }
 
-.hero .location {
-  display: inline-block;
-  margin-top: 1.25rem;
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: #fff;
-  text-decoration: none;
-  background: rgba(255, 255, 255, 0.18);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 999px;
-  padding: 0.5rem 1.1rem;
-  transition: background 0.15s ease, transform 0.15s ease;
-}
-
-.hero .location:hover {
-  background: rgba(255, 255, 255, 0.32);
-  transform: translateY(-1px);
-}
-
 /* ---------- Layout ---------- */
 main {
   max-width: 960px;
   margin: 0 auto;
   padding: 2.5rem 1.25rem 3.5rem;
+}
+
+/* Cap prose at a comfortable reading measure (~60-75 characters) */
+main > p,
+.faq .answer p {
+  max-width: 68ch;
 }
 
 .section-title {
@@ -225,12 +233,31 @@ main {
   flex-grow: 1;
 }
 
+.secure-note {
+  flex-grow: 0;
+  font-size: 0.82rem;
+  color: var(--reed);
+  background: #eef5ef;
+  border: 1px solid #d4e6d7;
+  border-radius: 8px;
+  padding: 0.5rem 0.7rem;
+  margin: 0 0 1.1rem;
+  line-height: 1.45;
+}
+
+.secure-note strong {
+  color: #2c4f33;
+}
+
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
   background: var(--water);
   color: #fff;
   text-decoration: none;
-  padding: 0.55rem 1.1rem;
+  padding: 0.6rem 1.1rem;
   border-radius: 8px;
   font-weight: 600;
   font-size: 0.92rem;
@@ -243,12 +270,19 @@ main {
   color: #fff;
 }
 
-.btn.secondary {
-  background: var(--reed);
+.btn-icon {
+  width: 26px;
+  height: 26px;
+  flex: 0 0 auto;
+  background: #fff;
+  border-radius: 5px;
+  padding: 3px;
+  box-sizing: border-box;
 }
 
-.btn.secondary:hover {
-  background: #2c4f33;
+/* The three resource-card actions share one consistent full-width button */
+.card-body .btn {
+  width: 100%;
 }
 
 /* ---------- Map embed ---------- */
